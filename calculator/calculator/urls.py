@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from core.views import front, example
+from core.views import front, item, item_detail, example
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", front, name="front"),
     path("example/", example, name="example"),
-    # path("notes/<int:pk>/", note_detail, name="detail"),
+    path("items/", item, name="item"),
+    path("items/<int:pk>/", item_detail, name="detail"),
 ]   
