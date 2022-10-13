@@ -6,3 +6,5 @@ To run, do the following commands (mac/linux):
 3. python3 manage.py runserver
 
 interesting things (POST/GET between frontend (react) and backend (django) happens at ~/example url)
+
+test
